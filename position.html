@@ -11,46 +11,51 @@
         fixed
         */
 
+*{
+    margin: 0;
+    padding: 0;
+}
         .div-box{
           width: 300px;
-          height: 200px;  
-          /* background-color: brown; */
+          height: 200px; 
+          font-size: 60px;
+          text-align: center;
+          color: beige; 
         }
         .first{
             background-color: brown;
         }
         .second{
             background-color: purple;
-            position: sticky;
-            /* margin-top: -100px; */
+
         }
         .third{
             background-color: red;
-            /* position: a  bsolute; */
-            /* top:0 */
-            /* position: fixed; */
         }
         .fourth{
             background-color: blue;
         }
+        .parent{
+            background-color: burlywood;
+            display: flex;
+            flex-wrap: wrap;
+            /* justify-content: center;
+            align-items: center; */
+        }
     </style>
 </head>
 <body>
-    <div style="position: relative; border: 1px solid green;">
-
-    
-    <div class="div-box first">1</div>
+    <div class="parent">
+    <div class="div-box first">
+1
+        <!-- <h1>ammar</h1> -->
+    </div>
     <div class="div-box second" >2</div>
     <div class="div-box third" >3</div>
-    <div class="div-box fourth" >4</div>
-</div>
-<div style="position: relative; border: 1px solid green;">
-
-    
-    <div class="div-box">1</div>
-    <div class="div-box" >2</div>
-    <div class="div-box " >3</div>
-    <div class="div-box" >4</div>
+    <!-- <div class="div-box fourth" >4</div> -->
 </div>
 </body>
 </html>
+
+
+<!-- https://css-tricks.com/snippets/css/a-guide-to-flexbox/ -->
