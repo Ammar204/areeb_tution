@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #form {
+            background-color: #ededed;
+            width: 400px;
+            margin: 100px auto;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 20px;
+
+            padding: 20px 0px;
+        }
+
+
+        .input-wrapper {
+            width: 80%;
+            /* background-color: red; */
+            height: 50px;
+            margin: 10px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: brown;
+        }
+
+        .input-wrapper input {
+            width: 170px;
+            height: 30px;
+            border: 0;
+            padding: 5px 10px;
+            font-size: 16px;
+            border-radius: 10px
+        }
+
+        .address-wrapper {
+            height: 150px;
+        }
+
+        .submit-btn {
+            height: 40px;
+            width: 100px;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 3px;
+            background-color: transparent;
+            border: 3px solid #17699b;
+            border-radius: 40px;
+            margin: 20px 0;
+        }
+        .submit-btn:hover{
+            background-color: #17699b ;
+            transition: 0.15s ease-in;
+            color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="form">
+        <div class="input-wrapper">
+            <label for="usernameText">Enter your username</label>
+            <input type="text" placeholder="enter your name" required id="usernameText" />
+        </div>
+        <div class="input-wrapper">
+            <label>Enter your password</label>
+            <input type="password" required />
+        </div>
+        <div class="input-wrapper">
+            <label>Enter your First Name</label>
+            <input type="text" placeholder="Enter your firstname" />
+        </div>
+
+        <div class="input-wrapper">
+            <label>Enter your last Name</label>
+            <input type="text" placeholder="Enter your last name" />
+        </div>
+
+
+        <div>
+            <input type="radio" name="gender" value="male" id="maleRadio" />
+            <label for="maleRadio">Male1</label>
+            <input type="radio" name="gender" value="female" />
+            <label>female1</label>
+        </div>
+        <div class="input-wrapper address-wrapper">
+            <label>Enter your address</label>
+            <textarea rows="5" cols="30"></textarea>
+        </div>
+        <div>
+            <label>select your city</label>
+            <select>
+                <option value="volvo">abc</option>
+                <option value="saab">xyz</option>
+                <option value="opel">qwerty</option>
+            </select>
+        </div>
+        <div>
+            <input type="checkbox" name="aggrement" required id="chAccept" />
+            <label for="chAccept">accept term and conditions</label>
+        </div>
+
+
+        <input type="submit" class="submit-btn" value="signup" />
+
+    </form>
+
+</body>
+
+</html>
